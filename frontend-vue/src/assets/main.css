@@ -1,0 +1,149 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.header,
+.footer {
+  padding: 1rem;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: large;
+}
+
+.form-field input[type='text'],
+.form-field select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+select {
+  height: 200px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.form-field.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-field.checkbox input {
+  margin-right: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+button {
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  margin: 5px;
+  width: 100px;
+}
+
+.save-button {
+  background-color: #bdd2f4;
+  color: #3b485e;
+  border: #3b485e 1px solid;
+}
+
+.exit-button {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: #721c24 1px solid;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.form-field.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-field.checkbox input[type='checkbox'] {
+  transform: scale(1.5);
+  margin-right: 0.5rem;
+}
+
+.save-button:hover {
+  background-color: #b2c5e4;
+}
+
+.exit-button:hover {
+  background-color: #f5c6cb;
+}
+
+.save-button:active,
+.exit-button:active {
+  transform: scale(0.97);
+}
