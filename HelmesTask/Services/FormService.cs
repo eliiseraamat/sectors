@@ -41,12 +41,12 @@ public class FormService(FormRepository repository)
 
     private void SortSectors(List<Domain.Sector> sectors)
     {
-        sectors.Sort((s1, s2) => string.Compare(s1.Name, s2.Name, StringComparison.Ordinal));
+        sectors.Sort((s1, s2) => string.Compare(s1.Name, s2.Name, StringComparison.InvariantCultureIgnoreCase));
         foreach (var sector in sectors)
         {
             if (sector.ChildSectors == null) continue;
             
-            var sortedChildren = sector.ChildSectors.OrderBy(s => s.Name, StringComparer.Ordinal).ToList();
+            var sortedChildren = sector.ChildSectors.OrderBy(s => s.Name, StringComparer.InvariantCultureIgnoreCase).ToList();
             sector.ChildSectors = sortedChildren;
             
             SortSectors(sortedChildren);
